@@ -1,0 +1,269 @@
+﻿<Window x:Class="L6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Wheel of Fortune" Height="300" Width="380">
+    <Grid Margin="0,1,0,0" VerticalAlignment="Top">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="29,51,0,0" TextWrapping="Wrap" Text="You have: &#x0a;$8888" VerticalAlignment="Top" Width="77" RenderTransformOrigin="0.5,0.5"/>
+        <Canvas x:Name="canvas2D" HorizontalAlignment="Left" Height="200" Margin="132,34,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <RotateTransform x:Name="ROTATE" Angle="22.5"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Ellipse Width="232" Height="232" Canvas.Left="-16" Canvas.Top="-16" Stroke="Black">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+                        <GradientStop Color="#70706F" Offset="0.05"/>
+                        <GradientStop Color="#BEC0C2" Offset="0.5"/>
+                        <GradientStop Color="#A1A2A3" Offset="0.8"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse Width="224" Height="224" Canvas.Left="-12" Canvas.Top="-12" Stroke="#a2790d">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+                        <GradientStop Color="#ebd197" Offset="0.2"/>
+                        <GradientStop Color="#b48811" Offset="0.4"/>
+                        <GradientStop Color="#a2790d" Offset="0.6"/>
+                        <GradientStop Color="#bb9b49" Offset="0.8"/>
+                        <GradientStop Color="#ffffff" Offset="0.9"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <Ellipse Width="214" Height="214" Canvas.Left="-7" Canvas.Top="-7" Fill="#333" Stroke="Black"></Ellipse>
+            <Canvas x:Name="pies">
+                <Path x:Name="pie_1" Fill="LightSteelBlue" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="90" Canvas.Top="75" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="315"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_1_award"
+                Text="8888" RenderTransformOrigin="0.553,0.48" FontSize="18" TextAlignment="Left" Canvas.Left="40" Canvas.Top="28" Width="52">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="427.447"/>
+                            <TranslateTransform X="10.668" Y="8.372"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_2" Fill="Orange" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="65" Canvas.Top="65" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="270"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_2_award"
+                Text="8888" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Left" Canvas.Left="17" Canvas.Top="64" Width="52">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="386.13"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_3" Fill="LightPink" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="40" Canvas.Top="75" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="225"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_3_award"
+                Text="8888" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Left" Canvas.Left="16" Canvas.Top="113" Width="52">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="335.196"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_4" Fill="LightYellow" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="29.3" Canvas.Top="100" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="180"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_4_award"
+            Text="8888" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Left" Canvas.Left="51" Canvas.Top="146" Width="50">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="294.567"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_5" Fill="DimGray" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="40" Canvas.Top="125" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <RotateTransform Angle="135"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_5_award"
+            Text="8888" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Left" Canvas.Left="100" Canvas.Top="147" Width="50">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="246.05"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_6" Fill="Firebrick" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="65.5" Canvas.Top="135" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90.563"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_6_award"
+            Text="8888" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Left" Canvas.Left="133" Canvas.Top="114" Width="50">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="205.328"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_7" Fill="Aquamarine" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="90.4" Canvas.Top="124.9" RenderTransformOrigin="0.5,0.5" >
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="45"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <TextBlock x:Name="pie_7_award"
+            Text="8888" RenderTransformOrigin="0.5,0.5" Canvas.Left="133" Canvas.Top="67" Width="52" FontSize="18" TextAlignment="Left">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="165"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+                <Path x:Name="pie_8" Fill="PeachPuff" Data="M0,0 L0,-100 A100,100 0 0 1 70.7,-70.7 z" Canvas.Left="100.5" Canvas.Top="99.5" />
+                <TextBlock x:Name="pie_8_award"
+            Text="8888" RenderTransformOrigin="0.5,0.5" Canvas.Left="101" Canvas.Top="30" Width="50" FontSize="18" TextAlignment="Left">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="113.108"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </Canvas>
+        </Canvas>
+        <Button x:Name="start_button" Foreground="White" Width="50" Height="50" Margin="207,105,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="StartClick" FontWeight="Bold">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid Background="Transparent">
+                        <Path Canvas.Left="180" StrokeLineJoin="Round" Margin="0,0,0,0" Stretch="Fill">
+                            <Path.Data>
+                                <CombinedGeometry GeometryCombineMode="Union">
+                                    <CombinedGeometry.Geometry1>
+                                        <EllipseGeometry Center="12,12" RadiusX="12" RadiusY="12"/>
+                                    </CombinedGeometry.Geometry1>
+                                </CombinedGeometry>
+                            </Path.Data>
+                            <Path.Fill>
+                                <RadialGradientBrush GradientOrigin="0.5,0.8" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                                    <RadialGradientBrush.GradientStops>
+                                        <GradientStop Color="#1bcef3" Offset="0" />
+                                        <GradientStop Color="#07609f" Offset="0.55" />
+                                        <GradientStop Color="#01297c" Offset="0.8" />
+                                        <GradientStop Color="DarkBlue" Offset="1" />
+                                    </RadialGradientBrush.GradientStops>
+                                </RadialGradientBrush>
+                            </Path.Fill>
+                            <Path.Stroke>
+                                <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                                    <RadialGradientBrush.GradientStops>
+                                        <GradientStop Color="#0b61b1" Offset="0.8" />
+                                        <GradientStop Color="Cyan" Offset="0.95" />
+                                        <GradientStop Color="#01297c" Offset="1" />
+                                    </RadialGradientBrush.GradientStops>
+                                </RadialGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <ContentPresenter x:Name="start_text" Content="Start!" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,16,0,0"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="stop_button" Foreground="Transparent" Width="30" Height="50" Margin="217,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="StopClick" FontWeight="Bold">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Path Canvas.Left="180" StrokeLineJoin="Round" Margin="0,5,0,5" Stretch="Fill">
+                            <Path.Data>
+                                <CombinedGeometry GeometryCombineMode="Union">
+                                    <CombinedGeometry.Geometry1>
+                                        <EllipseGeometry Center="12,12" RadiusX="12" RadiusY="12"/>
+                                    </CombinedGeometry.Geometry1>
+                                    <CombinedGeometry.Geometry2>
+                                        <PathGeometry>
+                                            <PathFigure StartPoint="1,17" IsClosed="True" >
+                                                <LineSegment Point="23,17"  />
+                                                <LineSegment Point="12,32.5"  />
+                                            </PathFigure>
+                                        </PathGeometry>
+                                    </CombinedGeometry.Geometry2>
+                                </CombinedGeometry>
+                            </Path.Data>
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="1.9,1" StartPoint="1.4,0">
+                                    <GradientStop Color="Red" Offset="0.05"/>
+                                    <GradientStop Color="#8B0000" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                            <Path.Stroke>
+                                <LinearGradientBrush EndPoint="0.2,1" StartPoint="0.8,0">
+                                    <GradientStop Color="#B22222" Offset="0.504"/>
+                                    <GradientStop Color="#AA0000" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Path.Stroke>
+                        </Path>
+                        <ContentPresenter Content="Stop" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,12,0,0"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</Window>
