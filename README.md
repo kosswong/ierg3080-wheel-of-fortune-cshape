@@ -15,6 +15,9 @@ be randomized (continuous or repeated)
 - Animation of the Wheel is necessary - the wheel should have realistic velocity and slow down eventually to the choice .
 - Player start with $1000. If a player loses all the money, prompt "Game Over" in some manner and Reset everything, including a newly randomized Wheel.
 
+## Screenshot
+![alt text](https://github.com/kosswong/IERG3080/blob/main/screenshot.png?raw=true)
+
 ## Language
 C# with WPF
 
