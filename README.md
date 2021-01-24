@@ -22,4 +22,4 @@ be randomized (continuous or repeated)
 C# with WPF
 
 ## Disclaimer
-It is not a prefect solution. Just for reference.
+It is not a perfect solution. Just for reference.
