@@ -1,4 +1,4 @@
-# 3. Wheel of Fortune
+# Wheel of Fortune
 ## Project Specifications
 Implement a Wheel of Fortune game in which you have:
 - A Canvas that shows a kind of Wheel of Fortune
